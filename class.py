@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb 14 10:03:32 2018
+
+@author: porames
+"""
+
+class dog:
+    def __init__(self,n):
+        self.name = n
+        self.size = 5
+        self.hp = 1000
+        print(self.name + ' was born')
+    def play(self):
+        if self.hp > 100:
+            print(self.name + " is playing")
+            self.hp += 100
+        else:
+            print("I can't play")
+    def eat(self):
+        self.hp += 500
+        print(self.name + "'s HP is "+str(self.hp))
+        
+d1 = dog("Allah")
+d1.play()
+d1.eat()
